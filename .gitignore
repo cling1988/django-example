@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+*.pyc
+logs/*
+.idea
+.env*
+sample_web/static/*
