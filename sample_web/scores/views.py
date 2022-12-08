@@ -14,6 +14,7 @@ def index(request):
 @login_required
 def get_score(request, user_input=None):
     if request.method == 'GET':
+        print('In get score')
         result = int(user_input) + 1
         score = Scores.objects.create(result=result, user=request.user)
         return JsonResponse({'result': score.result})
